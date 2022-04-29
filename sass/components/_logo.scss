@@ -6,19 +6,24 @@
     line-height: 1.192;
     letter-spacing: 0.03em;
     margin-right: 93px;
-  }
-  
-  .logo span {
-    color: var(--secondary-color);
-  }
 
-  .logo--light-theme {
-    color: var(--main-color);
-    background-color: var(--tertiary-color);
+    &accent {
+      color: var(--secondary-color);
+    }
+
+    &--light-theme {
+      color: var(--main-color);
+      background-color: var(--tertiary-color);
+    }
+
+    &--dark-theme {
+      color: var(--tertiary-color);
+      background-color: var(--quaternary-color);
+    }
   }
   
-  .logo--dark-theme {
-    color: var(--tertiary-color);
-    background-color: var(--quaternary-color);
-  }
+  // .logo span {
+    
+  // }
+
   
