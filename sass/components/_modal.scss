@@ -35,7 +35,7 @@
     pointer-events: none;
   }
   
-  .form__header {
+  .modal__header {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -45,7 +45,7 @@
     padding-bottom: 12px;
   }
   
-  .form__field {
+  .modal__form-field {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -56,7 +56,14 @@
     color: var(--septenary-color);
   }
   
-  .singup__field {
+  .modal__form-box {
+    display: block;
+    position: relative;
+    margin-top: 4px; 
+    margin-bottom: 10px;
+  }
+  
+  .modal__form-input {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -64,19 +71,18 @@
     padding-left: 42px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
+    &:focus {
+      outline: none;
+      border-color: var(--secondary-color);
+    }
   }
   
-  .singup__field:focus,
-  .singup__field-feedback:focus {
-    outline: none;
-    border-color: var(--secondary-color);
-  }
-  
-  .singup__field:focus + .singup__field-icon {
+  .modal__form-input:focus + .modal__form-input-icon {
     fill: var(--secondary-color);
   }
   
-  .singup__field-icon {
+  .modal__form-input-icon {
     position: absolute;
     top: 14px;
     left: 15px;
@@ -84,15 +90,8 @@
     height: 12px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .singup__box {
-    display: block;
-    position: relative;
-    margin-top: 4px; 
-    margin-bottom: 10px;
-  }
-  
-  .singup__field-feedback {
+    
+  .modal__form-input-feedback {
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -101,22 +100,22 @@
     border-radius: 4px;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      outline: none;
+      border-color: var(--secondary-color);
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.667;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
   }
-  
-  .singup__field-feedback::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.667;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-  }
-  
-  .singup__field-feedback:focus {
-    outline: none;
-    border-color: var(--secondary-color);
-  }
-  
-  .policy__box {
+     
+  .modal__form-policy {
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 14px;
@@ -127,18 +126,18 @@
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--septenary-color);
+
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 16px;
+      height: 16px;
+      border: 2px solid var(--main-color);
+      border-radius: 2px;
+    }
   }
-  
-  .modal__form-policy-text::before {
-    display: inline-block;
-    content: "";
-    width: 16px;
-    height: 16px;
-    border: 2px solid var(--main-color);
-    border-radius: 2px;
-  }
-  
-  .modal__form-policy:checked + .modal__form-policy-text::before {
+   
+  .modal__form-policy-input:checked + .modal__form-policy-text::before {
     background-image: url(../images/Vector.svg);
     background-repeat: no-repeat;
     background-position: center;

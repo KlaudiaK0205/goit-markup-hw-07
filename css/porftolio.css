@@ -89,7 +89,7 @@ img {
   margin-right: 93px;
 }
 
-.logoaccent {
+.logo__span {
   color: var(--secondary-color);
 }
 
@@ -144,15 +144,14 @@ img {
   justify-content: center;
 }
 
+.social__link:hover, .social__link:focus {
+  fill: var(--tertiary-color);
+  background-color: var(--secondary-color);
+}
+
 .social__icon {
   width: 20px;
   height: 20px;
-}
-
-.social__link:hover,
-.social__link:focus {
-  fill: var(--tertiary-color);
-  background-color: var(--secondary-color);
 }
 
 .navigation__link,

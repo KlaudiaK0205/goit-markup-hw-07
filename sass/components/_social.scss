@@ -13,6 +13,12 @@
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+
+    &:hover,
+    &:focus {
+      fill: var(--tertiary-color);
+      background-color: var(--secondary-color);
+     }
   }
   
   .social__icon {
@@ -20,8 +26,4 @@
     height: 20px;
   }
   
-  .social__link:hover,
-  .social__link:focus {
-    fill: var(--tertiary-color);
-    background-color: var(--secondary-color);
-   }
+  

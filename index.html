@@ -16,13 +16,13 @@
     <header class="header">
       <div class="container">
         <nav class="navigation">
-          <a class="logo logo--light-theme link" href="./index.html"><span class="accent">Web</span>Studio</a>
+          <a class="logo logo--light-theme link" href="./index.html"><span class="logo__span">Web</span>Studio</a>
 
           <ul class="navigation__list list">
-            <li class="navigation__item">
+            <li class="navigation__item agency--main">
               <a class="navigation__link link" href="./index.html">Agencja</a>
             </li>
-            <li class="navigation__item portfolio--main">
+            <li class="navigation__item">
               <a class="navigation__link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="navigation__item">
@@ -370,7 +370,7 @@
     <footer class="footer section">
       <div class="container">
         <div class="left-side">
-          <p class="logo logo--dark-theme"><span>Web</span>Studio</p>
+          <p class="logo logo--dark-theme"><span class="logo__span">Web</span>Studio</p>
 
           <address class="address">
             <ul class="address__list list">
@@ -460,46 +460,46 @@
           </svg>
         </button>
 
-        <h4 class="form__header">Zostaw swoje dane w formularzu poniżej</h4>
+        <h4 class="modal__header">Zostaw swoje dane w formularzu poniżej</h4>
 
-        <form name="form" autocomplete="on" novalidate>
-          <label class="form__field">
+        <form name="modal__form" autocomplete="on" novalidate>
+          <label class="modal__form-field">
             Imie
-            <span class="singup__box">
-              <input class="singup__field" type="text" name="username">
-              <svg class="singup__field-icon">
+            <span class="modal__form-box">
+              <input class="modal__form-input" type="text" name="username">
+              <svg class="modal__form-input-icon">
                 <use href="./images/sprite.svg#icon-person"></use>
               </svg>
             </span>
           </label>
 
-          <label class="form__field">
+          <label class="modal__form-field">
             Telefon
-            <span class="singup__box">
-              <input class="singup__field" type="tel" name="phone">
-              <svg class="singup__field-icon">
+            <span class="modal__form-box">
+              <input class="modal__form-input" type="tel" name="phone">
+              <svg class="modal__form-input-icon">
                 <use href="./images/sprite.svg#icon-phone"></use>
               </svg>
             </span>
            </label>
 
-          <label class="form__field">
+          <label class="modal__form-field">
             Email
-            <span class="singup__box">
-              <input class="singup__field" type="email" name="email">
-              <svg class="singup__field-icon">
+            <span class="modal__form-box">
+              <input class="modal__form-input" type="email" name="email">
+              <svg class="modal__form-input-icon">
                 <use href="./images/sprite.svg#icon-email"></use>
               </svg>
             </span>
           </label>
         
-          <label class="form__field">
+          <label class="modal__form-field">
             Komentarz
-            <textarea class="singup__field-feedback" name="feedback" placeholder="Wprowadź tekst"></textarea>
+            <textarea class="modal__form-input-feedback" name="feedback" placeholder="Wprowadź tekst"></textarea>
           </label>
     
-          <div class="policy__box">
-            <input class="modal__form-policy visually-hidden" id="user-policy" type="checkbox" name="policy">
+          <div class="modal__form-policy">
+            <input class="modal__form-policy-input visually-hidden" id="user-policy" type="checkbox" name="policy">
             <label for="user-policy" class="modal__form-policy-text"> Oświadczam iż akceptuję <a class="rules-policy" href="#">Regulamin</a> i <a class="rules-policy" href="#">Politykę Prywatności</a>.
             </label>
           </div>
