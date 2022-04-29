@@ -1,0 +1,16 @@
+.navigation__link:hover,
+.navigation__link:focus,
+.button-list__item:hover,
+.button-list__item:focus,
+.address__home:hover,
+.address__home:focus,
+.mailto:hover,
+.mailto:focus,
+.phone:hover,
+.phone:focus,
+.address__mailto:hover,
+.address__mailto:focus,
+.address__phone:hover,
+.address__phone:focus {
+  color: var(--secondary-color);
+}
