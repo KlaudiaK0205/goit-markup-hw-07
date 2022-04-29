@@ -87,10 +87,13 @@
   display: flex;
 }
   
-.singup__item:not(:last-child) {
-  margin-right: 12px;
+.singup__item {
+
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
 }
-  
+
 .singup__email {
   width: 358px;
   height: 50px;

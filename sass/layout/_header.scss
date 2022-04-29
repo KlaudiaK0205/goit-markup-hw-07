@@ -17,9 +17,12 @@
   display: flex;
   align-items: center;
 }
+
+.navigation__item {
   
-.navigation__item:not(:last-child) {
-  margin-right: 46px;
+  &:not(:last-child) {
+    margin-right: 46px;
+  }
 }
   
 .header .mailto {
@@ -35,11 +38,6 @@
   letter-spacing: 0.02em;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: var(--secondary-color);
-  }
 }
   
 .navigation__link {
@@ -61,26 +59,37 @@
   height: 12px;
   cursor: pointer;
   margin-right: 10px;
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+  }
 }
   
-.agency--main:after {
-  position: absolute;
-  top: 76px;
-  display: block;
-  content: "";
-  width: 53px;
-  height: 4px;
-  background: var(--secondary-color);
-  border-radius: 2px;
+.agency--main {
+
+  &::after {
+    position: absolute;
+    top: 76px;
+    display: block;
+    content: "";
+    width: 53px;
+    height: 4px;
+    background: var(--secondary-color);
+    border-radius: 2px;
+  }
 }
   
-.portfolio--main::after {
-  position: absolute;
-  top: 76px;
-  display: block;
-  content: "";
-  width: 58px;
-  height: 4px;
-  background: var(--secondary-color);
-  border-radius: 2px;
+.portfolio--main {
+
+  &::after {
+    position: absolute;
+    top: 76px;
+    display: block;
+    content: "";
+    width: 58px;
+    height: 4px;
+    background: var(--secondary-color);
+    border-radius: 2px;
+  }
 }
