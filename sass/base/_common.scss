@@ -1,0 +1,52 @@
+:root {
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    --main-color: #212121;
+    --secondary-color: #2196f3;
+    --tertiary-color: #ffffff;
+    --quaternary-color: #2f303a;
+    --quinary-color: #ECECEC;
+    --senary-color: #f5f4fa;
+    --septenary-color:  #757575;
+    --octonary-color: #EEEEEE;
+    --nonary-color: #AFB1B8;
+  }
+  
+  body {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    display:block;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+  }

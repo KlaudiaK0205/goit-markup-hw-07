@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/styles.css">
     <title>WebStudio</title>
   </head>
 
@@ -460,51 +460,51 @@
           </svg>
         </button>
 
-        <h4 class="form-title">Zostaw swoje dane w formularzu poniżej</h4>
+        <h4 class="form__header">Zostaw swoje dane w formularzu poniżej</h4>
 
-        <form name="signup_form" autocomplete="on" novalidate>
-          <label class="singup-form-field">
+        <form name="form" autocomplete="on" novalidate>
+          <label class="form__field">
             Imie
-            <span class="singup-box">
-              <input class="singup-field" type="text" name="username">
-              <svg class="singup-form-icon">
+            <span class="singup__box">
+              <input class="singup__field" type="text" name="username">
+              <svg class="singup__field-icon">
                 <use href="./images/sprite.svg#icon-person"></use>
               </svg>
             </span>
           </label>
 
-          <label class="singup-form-field">
+          <label class="form__field">
             Telefon
-            <span class="singup-box">
-              <input class="singup-field" type="tel" name="phone">
-              <svg class="singup-form-icon">
+            <span class="singup__box">
+              <input class="singup__field" type="tel" name="phone">
+              <svg class="singup__field-icon">
                 <use href="./images/sprite.svg#icon-phone"></use>
               </svg>
             </span>
            </label>
 
-          <label class="singup-form-field">
+          <label class="form__field">
             Email
-            <span class="singup-box">
-              <input class="singup-field" type="email" name="email">
-              <svg class="singup-form-icon">
+            <span class="singup__box">
+              <input class="singup__field" type="email" name="email">
+              <svg class="singup__field-icon">
                 <use href="./images/sprite.svg#icon-email"></use>
               </svg>
             </span>
           </label>
         
-          <label class="singup-form-field">
+          <label class="form__field">
             Komentarz
-            <textarea class="singup-field-feedback" name="feedback" placeholder="Wprowadź tekst"></textarea>
+            <textarea class="singup__field-feedback" name="feedback" placeholder="Wprowadź tekst"></textarea>
           </label>
     
-          <div class="policy-box">
-            <input class="modal-form-policy visually-hidden" id="user-policy" type="checkbox" name="policy">
-            <label for="user-policy" class="modal-form-policy-text"> Oświadczam iż akceptuję <a class="rules-policy" href="#">Regulamin</a> i <a class="rules-policy" href="#">Politykę Prywatności</a>.
+          <div class="policy__box">
+            <input class="modal__form-policy visually-hidden" id="user-policy" type="checkbox" name="policy">
+            <label for="user-policy" class="modal__form-policy-text"> Oświadczam iż akceptuję <a class="rules-policy" href="#">Regulamin</a> i <a class="rules-policy" href="#">Politykę Prywatności</a>.
             </label>
           </div>
 
-          <button class="singup-form-btn" type="submit">Wyślij</button>
+          <button class="form__btn" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
