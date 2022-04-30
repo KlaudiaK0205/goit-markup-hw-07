@@ -58,6 +58,30 @@ img {
   margin: 0 auto;
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 23px;
+}
+
+.hero .container {
+  display: block;
+  align-items: center;
+}
+
+.our-customers .container {
+  display: block;
+}
+
+.our-strength .container {
+  display: inline;
+}
+
+.container .what-we-do {
+  display: block;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -98,6 +122,26 @@ img {
   background-color: var(--secondary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.modal-btn-portfolio {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  background: var(--senary-color);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-btn-portfolio:hover, .modal-btn-portfolio:focus {
+  color: var(--tertiary-color);
+  background: var(--secondary-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main-header {
@@ -151,13 +195,6 @@ img {
 
 .header {
   border-bottom: 1px solid var(--quinary-color);
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-  padding-top: 24px;
-  padding-bottom: 23px;
 }
 
 .navigation {
@@ -247,32 +284,12 @@ img {
   justify-content: center;
 }
 
-.button-list__item:hover, .button-list__item:focus {
+.button__item:hover, .button__item:focus {
   color: var(--secondary-color);
 }
 
-.button-list__item:not(:last-child) {
+.button__item:not(:last-child) {
   margin-right: 8px;
-}
-
-.modal-btn-portfolio {
-  padding: 6px 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-  background: var(--senary-color);
-  border: 0;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.modal-btn-portfolio:hover, .modal-btn-portfolio:focus {
-  color: var(--tertiary-color);
-  background: var(--secondary-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .images__list {

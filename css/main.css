@@ -68,6 +68,30 @@ img {
   margin: 0 auto;
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 23px;
+}
+
+.hero .container {
+  display: block;
+  align-items: center;
+}
+
+.our-customers .container {
+  display: block;
+}
+
+.our-strength .container {
+  display: inline;
+}
+
+.container .what-we-do {
+  display: block;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -346,13 +370,6 @@ img {
   border-bottom: 1px solid var(--quinary-color);
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
-  padding-top: 24px;
-  padding-bottom: 23px;
-}
-
 .navigation {
   display: flex;
 }
@@ -438,11 +455,6 @@ img {
   background-size: cover;
 }
 
-.hero .container {
-  display: block;
-  align-items: center;
-}
-
 .hero__header {
   padding-top: 200px;
   padding-bottom: 30px;
@@ -475,10 +487,6 @@ img {
   padding: 10px 41px 10px 42px;
 }
 
-.our-strength .container {
-  display: inline;
-}
-
 .our-strengths__list {
   display: flex;
   justify-content: center;
@@ -509,10 +517,6 @@ img {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--septenary-color);
-}
-
-.what-we-do .container {
-  display: block;
 }
 
 .what-we-do__list {
@@ -580,10 +584,6 @@ img {
   line-height: 1.888;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.our-customers .container {
-  display: block;
 }
 
 .our-customers__list {
