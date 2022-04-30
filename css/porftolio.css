@@ -110,6 +110,20 @@ img {
   background-color: var(--quaternary-color);
 }
 
+.button__list {
+  display: flex;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.button__item:hover, .button__item:focus {
+  color: var(--secondary-color);
+}
+
+.button__item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .modal-btn {
   font-weight: 700;
   font-size: 16px;
@@ -276,20 +290,6 @@ img {
 
 .main {
   width: 1600px;
-}
-
-.button__list {
-  display: flex;
-  padding-bottom: 50px;
-  justify-content: center;
-}
-
-.button__item:hover, .button__item:focus {
-  color: var(--secondary-color);
-}
-
-.button__item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .images__list {

@@ -1,25 +1,7 @@
 .main {
   width: 1600px;
 }
-  
-.button__list {
-  display: flex;
-  padding-bottom: 50px ;
-  justify-content: center;
-}
-  
-.button__item {
 
-  &:hover,
-  &:focus {
-    color: var(--secondary-color);
-  }
-
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
-}
- 
 .images__list {
   display: flex;
   flex-wrap: wrap;
