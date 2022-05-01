@@ -398,6 +398,14 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.navigation__link:hover, .navigation__link:focus,
+.mailto:hover,
+.mailto:focus,
+.phone:hover,
+.phone:focus {
+  color: var(--secondary-color);
+}
+
 .navigation__link {
   color: var(--main-color);
 }
@@ -405,6 +413,12 @@ img {
 .mailto,
 .phone {
   color: var(--septenary-color);
+}
+
+.mailto:hover, .mailto:focus,
+.phone:hover,
+.phone:focus {
+  color: var(--secondary-color);
 }
 
 .mailto {
@@ -417,12 +431,6 @@ img {
   height: 12px;
   cursor: pointer;
   margin-right: 10px;
-}
-
-.mailto__item:hover, .mailto__item:focus,
-.phone__item:hover,
-.phone__item:focus {
-  color: var(--secondary-color);
 }
 
 .agency--main::after {

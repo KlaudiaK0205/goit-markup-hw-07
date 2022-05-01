@@ -31,6 +31,11 @@
   letter-spacing: 0.02em;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+  }
 }
   
 .navigation__link {
@@ -40,6 +45,11 @@
 .mailto,
 .phone {
   color: var(--septenary-color);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+  }
 }
   
 .mailto {
@@ -52,11 +62,6 @@
   height: 12px;
   cursor: pointer;
   margin-right: 10px;
-
-  &:hover,
-  &:focus {
-    color: var(--secondary-color);
-  }
 }
   
 .agency--main {
