@@ -48,6 +48,7 @@
 
   &:hover,
   &:focus {
+    fill: var(--secondary-color);
     color: var(--secondary-color);
   }
 }
